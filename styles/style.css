@@ -666,16 +666,16 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 6em;
+    padding-top: 2em;
 }
 
 .depoimentos__titulo{
     position: relative;
-    margin-top: 2em;
     text-align: center;
     font-size: 3em;
     font-weight: bolder;
     color: #000000;
+    margin-bottom: 2em;
 }
 
 .depoimentos__container{
@@ -685,30 +685,6 @@
     align-items: center;
     gap: 2em;
     margin: 0 4em;
-}
-
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.card h2 {
-    margin: 0 0 10px;
-}
-
-.card p {
-    margin: 0 0 20px;
-}
-
-.stars {
-    color: #ffd700;
 }
 
 .depoimentos__button-avaliacao{
@@ -1088,10 +1064,11 @@
         font-size: 2em;
         text-align: center;
         margin-top: 0;
+        margin-bottom: 0em;
     }
 
     .depoimentos__button-avaliacao{
-        width: 100%;
+        width: 80%;
     }
 
     .depoimentos__button-avaliacao-link{
