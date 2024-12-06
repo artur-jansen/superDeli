@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const INSTAGRAM_ACCESS_TOKEN = 'IGQWRQM3JNYUZApQzE4eXc1Umgtd2d1Q2ZACTm9kNjV6ME1Sc0tGdE1MQlRIel8xeko5UkZAKZADlVM3NGZAEF1WWxJOTFOSzV5dHpaeTY5WVp0dnNPOHRpRndZAN3FNWlgtV1pJQ085am9FR21Xc1N0Qk9OSnhsdmpCcTAZD';
+
     async function fetchInstagramPosts() {
         try {
-            const response = await fetch('https://dizas-7odici6w9-arturjansens-projects.vercel.app/api/instagram');
+            const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,timestamp&access_token=${INSTAGRAM_ACCESS_TOKEN}`);
+            if (!response.ok) {
+                throw new Error(`Erro na solicitação: ${response.status} ${response.statusText}`);
+            }
             const data = await response.json();
             return data.data;
         } catch (error) {
@@ -11,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function renderInstagramPosts(posts) {
+        if (!posts || posts.length === 0) {
+            console.error('Nenhuma publicação encontrada');
+            return;
+        }
+
         const recentVideoPost = posts
             .filter(post => post.media_type === 'VIDEO')
             .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
