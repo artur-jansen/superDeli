@@ -11,7 +11,7 @@ nav.navbar{
 }
 
 .navbar-collapse{
-    flex-grow: 0;
+    flex-grow: 0 !important;
 }
 
 .navbar__link{

@@ -115,3 +115,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateTogglerIcon();
 });
+
+function initialize() {
+    const placeId = "ChIJmYeuKyU5FAcRAP_MwT4gWJA"; 
+    const apiKey = "AIzaSyDIbgfLkvt6ar7hnHAYmvl3rMzF0sR-WkQ"; 
+
+    const service = new google.maps.places.PlacesService(document.createElement("div"));
+
+    service.getDetails(
+      {
+        placeId: placeId,
+        fields: ["reviews"], 
+      },
+      (place, status) => {
+        if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
+          const limitedReviews = place.reviews.slice(0, 3); // Limita a quantidade de avaliações a 3
+          displayReviews(limitedReviews);
+        } else {
+          document.getElementById("reviews").innerHTML = '<p class="error">Não foi possível carregar as avaliações no momento.</p>';
+        }
+      }
+    );
+}
+
+function displayReviews(reviews) {
+    const reviewsContainer = document.getElementById("reviews");
+  
+    reviews.forEach((review) => {
+      const reviewElement = document.createElement("div");
+      reviewElement.classList.add("review");
+  
+      const profilePhoto = review.profile_photo_url 
+        ? `<img src="${review.profile_photo_url}" alt="Foto de ${review.author_name}" class="profile-photo">` 
+        : '<img src="https://via.placeholder.com/50" alt="Sem foto" class="profile-photo">';
+  
+      reviewElement.innerHTML = `
+        <div class="review-header">
+          ${profilePhoto}
+          <div class="review-info">
+            <p><strong>${review.author_name}</strong></p>
+            <p class="stars">${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</p>
+          </div>
+        </div>
+        <p class="review-text">${review.text}</p>
+      `;
+  
+      reviewsContainer.appendChild(reviewElement);
+    });
+}
+
+const script = document.createElement("script");
+script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDIbgfLkvt6ar7hnHAYmvl3rMzF0sR-WkQ&libraries=places&callback=initialize`;
+script.async = true;
+script.defer = true;
+document.body.appendChild(script);

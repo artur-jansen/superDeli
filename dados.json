@@ -52,12 +52,12 @@
         { "imagem": "./assets/sapatos/sapato10.jpg", "nome": "Slip-On em camurça Verde" }
     ],
     "sueteres": [
-        { "imagem": "./assets/sueteres/sueter1.jpg", "nome": "Exemplo titulo item" },
+        { "imagem": "./assets/sueteres/sueter1.jpg", "nome": "Sueter Branco Com Listras" },
         { "imagem": "./assets/sueteres/sueter2.jpg", "nome": "Sueter Azul Com Listras" },
         { "imagem": "./assets/sueteres/sueter3.jpg", "nome": "Sueter Verde Com Listras" },
         { "imagem": "./assets/sueteres/sueter4.jpg", "nome": "Sueter Cor Telha" },
         { "imagem": "./assets/sueteres/sueter5.jpg", "nome": "Sueter Azul E Branco Bicolor" },
-        { "imagem": "./assets/sueteres/sueter6.jpg", "nome": "Sueter" }
+        { "imagem": "./assets/sueteres/sueter6.jpg", "nome": "Sueter Cor Telha Listrado" }
     ],
     "blazers": [
         { "imagem": "./assets/blazers/blazer1.jpg", "nome": "Blazer Slim Fit Preto" },
