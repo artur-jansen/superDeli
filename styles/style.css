@@ -179,8 +179,8 @@ section {
 }
 
 .home__btn-contato {
-    background-color: #25D366;
-    border: 2px solid #25D366;
+    background-color: #FCC000;
+    border: 2px solid #FCC000;
     border-radius: 12px;
     padding: 0.5em;
     width: 100%;
@@ -200,7 +200,7 @@ section {
 .home__btn-contato:focus {
     transition: 1s;
     padding: 0.6em;
-    background-color: #25d36559;
+    background-color: #fcc10066;
     border-radius: 12px 0 12px 12px;
 }
 
@@ -292,31 +292,25 @@ section {
     max-width: 400px !important;
 }
 
-.Embed div{
-    background-color: #000 !important;
+.sobre__galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 
 #instagram-embed-1,
 #instagram-embed-2,
 #instagram-embed-3 {
-    max-height: 580px !important;
+    max-height: 400px !important;
+    width: 400px !important;
+    max-width: 400px !important;
 }
 
 #recent-video-post {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.sobre__galeria-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.lightwidget__image {
-    border-radius: 12px !important;
 }
 
 .accordion {
@@ -363,14 +357,6 @@ section {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 1.5em;
-}
-
-.sobre__galeria-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em !important;
-    align-items: center;
-    height: fit-content;
 }
 
 .instagram-post-feed {
@@ -438,8 +424,8 @@ section {
 }
 
 .vantagens__btn-contato {
-    background-color: #25D366;
-    border: 2px solid #25D366;
+    background-color: #FCC000;
+    border: 2px solid #FCC000;
     border-radius: 12px;
     padding: 0.5em;
     width: 30%;
@@ -460,7 +446,7 @@ section {
 .vantagens__btn-contato:focus {
     transition: 1s;
     padding: 0.6em;
-    background-color: #25d36559;
+    background-color: #fcc10066;
     border-radius: 12px 0 12px 12px;
 }
 
@@ -975,7 +961,7 @@ section {
         flex-direction: column;
         justify-content: space-between;
         gap: 3em;
-        padding: 0 2em;
+        padding: 0;
     }
 
     .sobre__img {
@@ -1036,7 +1022,7 @@ section {
     }
     
     .depoimentos__button-avaliacao {
-        width: 40%;
+        width: 60%;
     }
 
     /* LOCALIZACAO */
@@ -1120,7 +1106,6 @@ section {
         flex-direction: column;
         justify-content: space-between;
         gap: 3em;
-        padding: 0 2em;
     }
 
     .sobre__img {
@@ -1128,6 +1113,17 @@ section {
         height: 480px;
         border: 5px solid #FCC000;
         border-radius: 12px;
+    }
+
+    .HoverCard{
+        display: none !important;
+    }
+
+    #instagram-embed-0 {
+        width: 300px !important;
+        min-width: 200px !important;
+        max-width: 300px !important;
+        max-height: 450px !important;
     }
 
     .sobre__container-baixo h3 {
@@ -1146,6 +1142,10 @@ section {
     .instagram-post-reel {
         height: 400px;
         width: auto;
+    }
+
+    .accordion {
+        max-width: 1300px;
     }
 
     /* VANTAGENS */
@@ -1192,11 +1192,26 @@ section {
     }
 
     .depoimentos__button-avaliacao {
-        width: 80%;
+        width: 95%;
     }
 
     .depoimentos__button-avaliacao-link {
         font-size: 1.1em;
+    }
+
+    .review {
+        flex: 1 1 calc(100% - 10px); 
+        max-width: calc(100% - 10px);
+    }
+
+    .review-info p {
+        text-align: left;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .review-text{
+        font-size: 14px;
     }
 
     /* LOCALIZACAO */
