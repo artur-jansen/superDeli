@@ -154,3 +154,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('resize', updateCarouselImages);
 });
+
+window.addEventListener('scroll', function () {
+  const voltarTopoBtn = document.querySelector('.voltarTopo');
+
+  if (window.scrollY > 50) {
+      voltarTopoBtn.classList.add('scrolled');
+  } else {
+      voltarTopoBtn.classList.remove('scrolled');
+  }
+});

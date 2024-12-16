@@ -46,7 +46,7 @@ a {
     color: #ffffff;
     border: transparent;
     border-radius: 100%;
-    font-size: 1.5em;
+    font-size: 2em;
     height: 50px;
     width: 50px;
     position: fixed;
@@ -77,11 +77,12 @@ a {
 }
 
 .voltarTopo {
-    background-color: transparent;
+    display: none;
+    background-color: #1D0C0C;
     color: #FCC000;
     border: 3px solid;
     border-radius: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     height: 50px;
     width: 50px;
     position: fixed;
@@ -95,11 +96,11 @@ a {
     transform: rotate(360deg);
     border-radius: 12px;
     background-color: #FCC000;
-    border: transparent;
+    border: 3px solid #1D0C0C;
 }
 
 .voltarTopo:hover .voltarTopo-link {
-    color: #ffffff;
+    color: #1D0C0C;
 }
 
 .voltarTopo-link {
