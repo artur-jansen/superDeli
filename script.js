@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initialize() {
-  const placeId = "ChIJmYeuKyU5FAcRAP_MwT4gWJA";
-  const apiKey = "AIzaSyDIbgfLkvt6ar7hnHAYmvl3rMzF0sR-WkQ";
+  const placeId = "ChIJy_B6M6kvFAcRqSYlXx7dSXs";
+  const apiKey = "AIzaSyAZv6UdPZgpc1oh4mc-Dw_TBbZKTUiwuBo";
 
   const service = new google.maps.places.PlacesService(document.createElement("div"));
 
@@ -113,7 +113,7 @@ function displayReviews(reviews) {
         <div class="review-header">
           ${profilePhoto}
           <div class="review-info">
-            <p><strong>${review.author_name}</strong></p>
+            <p>${review.author_name}</p>
             <p class="stars">${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</p>
           </div>
         </div>
@@ -129,3 +129,28 @@ script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDIbgfLkvt6ar7hnH
 script.async = true;
 script.defer = true;
 document.body.appendChild(script);
+
+document.addEventListener('DOMContentLoaded', function() {
+  function updateCarouselImages() {
+      const carouselImages = document.querySelectorAll('.carousel-image');
+      const windowWidth = window.innerWidth;
+
+      carouselImages.forEach(image => {
+          let newSrc;
+          if (windowWidth < 480) {
+              newSrc = image.dataset.srcMobile;
+          } else if (windowWidth < 920) {
+              newSrc = image.dataset.srcTablet;
+          } else {
+              newSrc = image.dataset.srcDesktop;
+          }
+          if (newSrc) {
+              image.src = newSrc;
+          }
+      });
+  }
+
+  updateCarouselImages();
+
+  window.addEventListener('resize', updateCarouselImages);
+});
