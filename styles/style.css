@@ -421,7 +421,7 @@ section {
 /* COLECAO */
 
 .colecao {
-    background-image: url(../../assets/img__cardapio.webp);
+    background-image: url(../assets/img__cardapio.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -812,20 +812,6 @@ section {
 
     .sobre__container-cima img {
         width: 70%;
-    }
-
-
-    #recent-video-post {
-        display: flex;
-        align-items: center;
-        background-image: url(../assets/fundo-video.PNG);
-        background-position: center;
-        background-size: cover;
-        background-clip: border-box;
-        background-repeat: no-repeat;
-        justify-content: center;
-        border-radius: 12px;
-        width: 100%;
     }
 
     .sobre__img {
