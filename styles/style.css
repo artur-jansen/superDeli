@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -122,17 +123,17 @@ section {
 
 .carousel-image {
     width: 100%;
-    height: auto; 
+    height: auto;
     display: block;
 }
 
 .carousel-item {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-.carousel-caption div{
+.carousel-caption div {
     background-color: #00000044;
     padding: 3em 1em;
     display: flex;
@@ -144,25 +145,25 @@ section {
     box-shadow: 0 2px 14px rgba(255, 187, 0, 0.1);
 }
 
-.carousel-caption h1{
+.carousel-caption h1 {
     font-size: 1em;
     letter-spacing: 2px;
     font-weight: lighter;
     border-bottom: 2px solid #FCC000;
 }
 
-.carousel-caption img{
+.carousel-caption img {
     width: 350px;
     margin: 1em 0;
 }
 
-.carousel-caption h2{
+.carousel-caption h2 {
     color: #FCC000;
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     width: 50%;
     font-size: 1.1em;
 }
@@ -200,10 +201,11 @@ section {
 .home__btn-contato:focus .home__btn-contato-link {
     color: #fff;
 }
+
 /* SOBRE */
 /* SOBRE */
 /* SOBRE */
-.sobre{
+.sobre {
     background-image: url(../assets/fundo-cinza.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -236,7 +238,7 @@ section {
     gap: 6em;
 }
 
-.sobre__container-cima img{
+.sobre__container-cima img {
     width: 35%;
 }
 
@@ -449,7 +451,7 @@ section {
     padding-bottom: 4em;
 }
 
-.container__colecao-item{
+.container__colecao-item {
     background-color: #1D0C0C;
     color: #fff;
     border: 2px solid #FCC000;
@@ -463,7 +465,7 @@ section {
     height: 300px;
 }
 
-.container__colecao-item i{
+.container__colecao-item i {
     font-size: 2em;
     color: #FCC000;
     border: 2px solid #FCC000;
@@ -471,20 +473,21 @@ section {
     padding: 0.5em;
 }
 
-.container__colecao-item h3{
+.container__colecao-item h3 {
     color: #FCC000;
     text-align: center;
     font-size: 1.5em;
 }
 
-.container__colecao-item p{
+.container__colecao-item p {
     font-weight: lighter;
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.container__colecao-item:hover, .container__colecao-item:focus{
+.container__colecao-item:hover,
+.container__colecao-item:focus {
     cursor: pointer;
     transition: 1s;
     transform: scale(1.01);
@@ -492,12 +495,12 @@ section {
     border: 2px solid #695103;
 }
 
-.container__colecao-item:hover h3{
+.container__colecao-item:hover h3 {
     transition: 1s;
     color: #ffd138;
 }
 
-.container__colecao-item:focus h3{
+.container__colecao-item:focus h3 {
     transition: 1s;
     color: #ffd138;
 }
@@ -539,17 +542,17 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 2em;
+    gap: 1em;
     width: 100%;
 }
 
-.localizacao-subcontainer h2{
+.localizacao-subcontainer h2 {
     border: 2px solid #FCC000;
     border-radius: 12px;
     padding: 0.2em;
 }
 
-.localizacao-subcontainer-cima{
+.localizacao-subcontainer-cima {
     display: flex;
     gap: 1em;
     width: 100%;
@@ -576,7 +579,6 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1em;
-    margin-bottom: 1.2em;
 }
 
 .localizacao__infos-p-texto {
@@ -612,7 +614,7 @@ section {
         gap: 1.2em;
     }
 
-    .carousel-caption div{
+    .carousel-caption div {
         background-color: #00000044;
         padding: 2em 1em;
         display: flex;
@@ -623,30 +625,30 @@ section {
         border-radius: 12px;
         box-shadow: 0 2px 14px rgba(255, 187, 0, 0.1);
     }
-    
-    .carousel-caption h1{
+
+    .carousel-caption h1 {
         font-size: 1em;
         letter-spacing: 2px;
         font-weight: lighter;
         border-bottom: 2px solid #FCC000;
     }
-    
-    .carousel-caption img{
+
+    .carousel-caption img {
         width: 350px;
         margin: 1em 0;
     }
-    
-    .carousel-caption h2{
+
+    .carousel-caption h2 {
         color: #FCC000;
         font-size: 1.8em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    
-    .carousel-caption p{
+
+    .carousel-caption p {
         width: 80%;
         font-size: 1.2em;
     }
-    
+
     .home__btn-contato-link {
         color: #fff;
         text-decoration: none;
@@ -670,7 +672,7 @@ section {
         padding: 0;
     }
 
-    .sobre__container-cima img{
+    .sobre__container-cima img {
         width: 50%;
     }
 
@@ -725,11 +727,10 @@ section {
     /* LOCALIZACAO */
     .localizacao-subcontainer {
         flex-direction: column;
-        gap: 2em;
         min-height: 100vh;
     }
 
-    .localizacao-subcontainer-cima{
+    .localizacao-subcontainer-cima {
         flex-direction: column;
     }
 
@@ -743,8 +744,7 @@ section {
     }
 
     .localizacao__banner {
-        width: 650px;
-        height: 350px;
+        min-height: 500px;
     }
 
     .localizacao__mapa {
@@ -753,7 +753,7 @@ section {
 }
 
 @media (max-width: 480px) {
-    .carousel-caption div{
+    .carousel-caption div {
         background-color: #00000044;
         padding: 2em;
         display: flex;
@@ -764,25 +764,25 @@ section {
         border-radius: 12px;
         box-shadow: 0 2px 14px rgba(255, 187, 0, 0.1);
     }
-    
-    .carousel-caption h1{
+
+    .carousel-caption h1 {
         font-size: 0.9em;
         letter-spacing: 2px;
         font-weight: lighter;
         border-bottom: 2px solid #FCC000;
     }
 
-    .carousel-caption h2{
+    .carousel-caption h2 {
         color: #FCC000;
         font-size: 1.4em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    
-    .carousel-caption p{
+
+    .carousel-caption p {
         width: 100%;
         font-size: 1.1em;
     }
-    
+
     .home__btn-contato-link {
         color: #fff;
         text-decoration: none;
@@ -810,18 +810,18 @@ section {
         padding: 0;
     }
 
-    .sobre__container-cima img{
+    .sobre__container-cima img {
         width: 70%;
     }
 
 
     #recent-video-post {
         display: flex;
-        align-items: center; 
+        align-items: center;
         background-image: url(../assets/fundo-video.PNG);
-        background-position: center; 
+        background-position: center;
         background-size: cover;
-        background-clip: border-box; 
+        background-clip: border-box;
         background-repeat: no-repeat;
         justify-content: center;
         border-radius: 12px;
@@ -839,7 +839,7 @@ section {
         max-width: 1300px;
     }
 
-    .sobre__container-baixo{
+    .sobre__container-baixo {
         padding: 0 1em;
     }
 
@@ -878,7 +878,7 @@ section {
     /* DEPOIMENTOS */
     /* DEPOIMENTOS */
     /* DEPOIMENTOS */
-    .depoimentos__container{
+    .depoimentos__container {
         margin: 0 1em 2em 1em;
     }
 
@@ -890,14 +890,15 @@ section {
     }
 
     .depoimentos__button-avaliacao {
-        width: 300px;;
+        width: 300px;
+        ;
     }
 
     .depoimentos__button-avaliacao-link {
         font-size: 1.1em;
     }
 
-    #reviews{
+    #reviews {
         width: 340px;
     }
 
@@ -914,7 +915,7 @@ section {
     /* CARDAPIO */
     /* CARDAPIO */
     /* CARDAPIO */
-    .container__colecao-item{
+    .container__colecao-item {
         width: 300px;
     }
 
@@ -928,8 +929,7 @@ section {
     }
 
     .localizacao-subcontainer {
-        gap: 2em;
-        margin-bottom: 2em;
+        gap: 1em;
     }
 
     .localizacao__endereco {
@@ -969,8 +969,8 @@ section {
     }
 
     .localizacao__banner {
-        width: 350px;
-        height: 200px;
+        height: 100%;
+        min-height: 100px;
     }
 
     .localizacao__mapa {
