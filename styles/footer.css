@@ -53,6 +53,11 @@ footer{
     display: flex;
     align-items: center;
     gap: 0.2em;
+    color: #fff;
+}
+
+.footer__item-contato-p{
+    color: #fff;
 }
 
 .contato__redes{

@@ -590,6 +590,11 @@ section {
     border-radius: 6px;
     width: auto;
     padding: 0.2em;
+    color: #fff;
+}
+
+.localizacao__infos-p-texto span{
+    color: #fff;
 }
 
 .localizacao__infos-pontos {
